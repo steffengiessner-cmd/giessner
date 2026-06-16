@@ -221,18 +221,15 @@ main {
   padding: 26px;
 }
 
-.portrait-placeholder {
-  width: 112px;
-  height: 112px;
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   margin-bottom: 24px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-strong), var(--warm));
-  color: #ffffff;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
-  font-weight: 700;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center 30%;
+  filter: grayscale(100%);
 }
 
 .profile-card h2,
@@ -291,6 +288,10 @@ main {
 
 .info-panel {
   padding: 24px;
+}
+
+.info-panel .button {
+  margin-top: 12px;
 }
 
 .info-panel dl {

@@ -9,6 +9,7 @@ A simple personal academic website for GitHub Pages.
 - Research: `research.html`
 - Teaching: `teaching.html`
 - Publications: `publications.html`
+- Speaker: `speaker.html`
 - Contact: `contact.html`
 
 ## Structure
