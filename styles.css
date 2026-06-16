@@ -92,14 +92,6 @@ main {
   backdrop-filter: blur(14px);
 }
 
-.site-title {
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -235,6 +227,14 @@ main {
 .profile-card h2,
 .profile-card p {
   margin-bottom: 8px;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
 }
 
 .section-grid {
