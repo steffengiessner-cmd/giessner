@@ -86,13 +86,14 @@ main {
   padding: 18px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 24px;
   background: rgba(247, 246, 241, 0.94);
   backdrop-filter: blur(14px);
 }
 
 .site-nav {
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 6px;
