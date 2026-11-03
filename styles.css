@@ -337,6 +337,11 @@ main {
   max-width: 850px;
 }
 
+.publication-item h2 {
+  font-size: clamp(1.0625rem, 1.5vw, 1.25rem);
+  line-height: 1.4;
+}
+
 .publication-item {
   display: grid;
   grid-template-columns: 90px minmax(0, 1fr);
