@@ -22,3 +22,9 @@ if (navToggle && siteNav) {
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 }
+
+const analytics = document.createElement("script");
+analytics.dataset.goatcounter = "https://steffengiessner.goatcounter.com/count";
+analytics.src = "https://gc.zgo.at/count.js";
+analytics.async = true;
+document.head.appendChild(analytics);
