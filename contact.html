@@ -40,18 +40,13 @@
       <section class="contact-grid">
         <article class="contact-card">
           <h2>Send a message</h2>
-          <p>While the contact form is being set up, please get in touch through
-            <a href="https://www.rsm.nl/people/steffen-giessner/">my RSM profile</a>.</p>
-          <!-- Enable the form once its delivery endpoint is connected. -->
-          <template id="contact-form-template">
-            <form method="post">
+          <form action="https://formspree.io/f/meaavjkk" method="post">
               <p><label>Your name<br /><input name="name" autocomplete="name" required /></label></p>
               <p><label>Your email<br /><input type="email" name="email" autocomplete="email" required /></label></p>
               <p><label>Your message<br /><textarea name="message" rows="6" required></textarea></label></p>
               <input type="text" name="_gotcha" hidden tabindex="-1" autocomplete="off" />
               <button class="button primary" type="submit">Send message</button>
-            </form>
-          </template>
+          </form>
         </article>
         <article class="contact-card">
           <h2>Office</h2>
