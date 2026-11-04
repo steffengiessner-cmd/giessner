@@ -48,7 +48,19 @@
           </div>
         </div>
         <aside class="profile-card" aria-label="Profile summary">
-          <img class="profile-photo" src="assets/steffen-giessner.jpg" alt="Portrait of Steffen Giessner" />
+          <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+            <defs>
+              <filter id="portrait-wine-tone" color-interpolation-filters="sRGB">
+                <feColorMatrix type="saturate" values="0" />
+                <feComponentTransfer>
+                  <feFuncR type="table" tableValues=".14 .40 .62 .81 .98" />
+                  <feFuncG type="table" tableValues=".09 .29 .51 .73 .95" />
+                  <feFuncB type="table" tableValues=".11 .32 .52 .71 .89" />
+                </feComponentTransfer>
+              </filter>
+            </defs>
+          </svg>
+          <img class="profile-photo" style="filter: url(#portrait-wine-tone)" src="assets/steffen-giessner.jpg" alt="Portrait of Steffen Giessner" />
           <h2>prof.dr. S.R. (Steffen) Giessner</h2>
           <p>Professor of Organisational Behaviour and Change</p>
           <p>Department of People and Organisations, RSM</p>
