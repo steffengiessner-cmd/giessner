@@ -1,0 +1,4 @@
+.illustrated-intro { max-width: none; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(20px, 4vw, 58px); }
+.illustrated-intro img { display: block; width: 100%; height: auto; }
+.illustrated-intro h1 { font-size: clamp(2.35rem, 4.3vw, 3.8rem); }
+@media (max-width: 760px) { .illustrated-intro { grid-template-columns: 1fr; } }
