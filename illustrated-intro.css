@@ -34,7 +34,7 @@
 }
 
 .illustrated-intro .wide-classroom { object-fit: contain; }
-.hero .profile-photo { object-position: center 15%; margin-bottom: 0; }
+.hero .profile-photo { object-fit: contain; object-position: center; margin-bottom: 0; }
 .hero .profile-card { padding: 0; border: 0; }
 .profile-details { padding: 20px; }
 
