@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(to right, transparent 33%, var(--paper) 51%),
-    url("assets/speaker-presenting.jpg") left top / auto 100% no-repeat;
+    url("assets/speaker-presenting.jpg?v=powerage") left top / auto 100% no-repeat;
 }
 .speaker-intro h1 { font-size: clamp(2.4rem, 4.3vw, 3.8rem); }
 .speaker-intro .lead { margin-bottom: 0; }
@@ -21,7 +21,7 @@
     content: "";
     display: block;
     aspect-ratio: 3 / 2;
-    background: url("assets/speaker-presenting.jpg") center / cover;
+    background: url("assets/speaker-presenting.jpg?v=powerage") center / cover;
     margin-bottom: 1.5rem;
   }
 }
