@@ -49,7 +49,8 @@
           </div>
         </div>
         <aside class="profile-card" aria-label="Profile summary">
-          <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+          <svg class="profile-photo" viewBox="0 0 840 560" role="img" aria-labelledby="portrait-title">
+            <title id="portrait-title">Portrait of Steffen Giessner</title>
             <defs>
               <filter id="portrait-wine-tone" color-interpolation-filters="sRGB">
                 <feColorMatrix type="saturate" values="0" />
@@ -59,9 +60,20 @@
                   <feFuncB type="table" tableValues=".11 .32 .52 .71 .89" />
                 </feComponentTransfer>
               </filter>
+              <linearGradient id="portrait-edge">
+                <stop stop-color="white" stop-opacity="0"/>
+                <stop offset=".2" stop-color="white"/>
+                <stop offset=".8" stop-color="white"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+              </linearGradient>
+              <mask id="portrait-mask" maskUnits="userSpaceOnUse" x="163" y="0" width="514" height="560">
+                <rect x="163" width="514" height="560" fill="url(#portrait-edge)"/>
+              </mask>
             </defs>
+            <rect width="840" height="560" fill="#FAF6EE"/>
+            <image href="assets/steffen-giessner.jpg" x="163" y="0" width="514" height="720"
+                   filter="url(#portrait-wine-tone)" mask="url(#portrait-mask)"/>
           </svg>
-          <img class="profile-photo" style="filter: url(#portrait-wine-tone)" src="assets/steffen-giessner.jpg" alt="Portrait of Steffen Giessner" />
           <div class="profile-details">
           <h2>prof.dr. S.R. (Steffen) Giessner</h2>
           <p>Professor of Organisational Behaviour and Change</p>
