@@ -446,3 +446,10 @@ main {
     padding: 20px;
   }
 }
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-right: auto;
+}
