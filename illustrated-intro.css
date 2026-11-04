@@ -1,4 +1,44 @@
-.illustrated-intro { max-width: none; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(20px, 4vw, 58px); }
-.illustrated-intro img { display: block; width: 100%; height: auto; }
+/* Use the same responsive picture column on every illustrated page. */
+:root {
+  --picture-width: min(42%, 420px);
+  --picture-gap: clamp(20px, 4vw, 58px);
+}
+
+.illustrated-intro,
+.hero {
+  display: grid;
+  gap: var(--picture-gap);
+  align-items: center;
+}
+
+.illustrated-intro {
+  max-width: none;
+  grid-template-columns: var(--picture-width) minmax(0, 1fr);
+}
+
+.hero {
+  grid-template-columns: minmax(0, 1fr) var(--picture-width);
+}
+
 .illustrated-intro h1 { font-size: clamp(2.35rem, 4.3vw, 3.8rem); }
-@media (max-width: 760px) { .illustrated-intro { grid-template-columns: 1fr; } }
+
+.illustrated-intro img,
+.hero .profile-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: var(--paper);
+}
+
+.illustrated-intro .wide-classroom { object-fit: contain; }
+.hero .profile-photo { object-position: center 15%; margin-bottom: 0; }
+.hero .profile-card { padding: 0; border: 0; }
+.profile-details { padding: 20px; }
+
+@media (max-width: 820px) {
+  .illustrated-intro, .hero { grid-template-columns: minmax(0, 1fr); }
+  .illustrated-intro img, .hero .profile-card { width: min(100%, 420px); }
+}
